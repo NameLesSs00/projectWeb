@@ -1,0 +1,135 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  background-color: #f0f0f0; /* Grayish background for the whole page */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-right p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Hotel Section */
+.hotel-section {
+  background-color: #f0f0f0; /* Grayish background */
+  padding: 60px 20px;
+  min-height: 100vh; /* Ensure the section fills the screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Flexbox Container for Hotel Cards */
+.hotel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limit the container width */
+}
+
+/* Hotel Card Styling */
+.hotel-card {
+  background-color: #ffffff;
+  width: 350px; /* Increased width for bigger cards */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  max-height: none; /* Let the card adjust its height automatically */
+}
+
+.hotel-card:hover {
+  transform: scale(1.05);
+}
+
+/* Hotel Image Styling */
+.hotel-img {
+  width: 100%;
+  height: auto; /* Allow the height to adjust based on the content */
+  object-fit: cover;
+}
+
+/* Hotel Info Section */
+.hotel-info {
+  padding: 15px 20px; /* Reduced padding to save space */
+  background-color: #fafafa; /* Lighter background for the info */
+  flex-grow: 1; /* Allow the info section to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between elements */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.hotel-info h3 {
+  font-size: 1.4rem; /* Reduced font size for the title */
+  color: #333;
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.hotel-info p {
+  font-size: 0.9rem; /* Smaller font size for paragraphs */
+  color: #555;
+  margin-bottom: 8px; /* Reduced margin */
+  line-height: 1.4; /* Adjust line height for readability */
+}
+
+.rating {
+  font-size: 1rem; /* Slightly smaller rating font size */
+  color: #f4c542;
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.price {
+  font-size: 1.1rem; /* Slightly smaller price font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+/* Button for Book a Night! */
+.revert-btn {
+  background-color: #6a11cb; /* Matching header color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  align-self: center; /* Center the button */
+}
+
+.revert-btn:hover {
+  background-color: #2575fc; /* Lighter blue on hover */
+}
+

@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+form fieldset {
+  border: none;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a11cb;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+p a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
